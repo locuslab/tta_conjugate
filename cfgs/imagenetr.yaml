@@ -1,0 +1,17 @@
+MODEL:
+  ADAPTATION: tent
+  ARCH: resnet50_polyloss
+  CKPT_PATH: saved_models/pretrained/imagenet_train_res50_poly_eps8.pth.tar
+  EPS: 8.0
+TEST:
+  DATASET: imagenetr
+  BATCH_SIZE: 200
+CORRUPTION:
+  DATASET: imagenet
+OPTIM:
+  METHOD: SGD
+  STEPS: 1
+  BETA: 0.9
+  LR: 0.0025
+  WD: 0.
+  TEMP: 1.0

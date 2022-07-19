@@ -1,0 +1,6 @@
+MODEL:
+  LOSS: polyloss
+  DATASET: svhn
+  SAVE_PATH: saved_models/pretrained/trained_model.pth
+  EPS: 6.0
+

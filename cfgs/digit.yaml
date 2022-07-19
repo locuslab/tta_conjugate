@@ -1,0 +1,15 @@
+MODEL:
+  ADAPTATION: tent
+  ARCH: ResNet-18
+  CKPT_PATH: /home/sachingo/UDA/checkpoint_plots/svhn_resnet18_poly6.pth
+  EPS: 6.0
+TEST:
+  DATASET: mnist
+  BATCH_SIZE: 200  # BATCH_SIZE: 64
+OPTIM:
+  METHOD: Adam
+  ADAPT: conjugate
+  STEPS: 1
+  BETA: 0.9
+  LR: 1e-2
+  WD: 0.
