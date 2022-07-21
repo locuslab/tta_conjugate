@@ -1,5 +1,5 @@
-# Test-time Adaptation via Conjugate PseudoLabel
-This repository provide the the implementation for replicating the results in the paper "Test-time Adaptation via Conjugate Pseudo-Labels" by Sachin Goyal, Mingjie Sun, Aditi Raghunanthan and Zico Kolter.
+# Test-time Adaptation via Conjugate Pseudo-Labels
+This repository provide the the implementation for replicating the results in the paper ["Test-time Adaptation via Conjugate Pseudo-Labels"](https://arxiv.org/abs/2207.09640) by Sachin Goyal, Mingjie Sun, Aditi Raghunanthan and Zico Kolter.
 
 
 
