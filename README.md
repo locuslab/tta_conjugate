@@ -1,11 +1,11 @@
 # Test-time Adaptation via Conjugate Pseudo-Labels
 This repository provide the the implementation for replicating the results in the following paper:
 
-Test-time Adaptation via Conjugate Pseudo-Labels. [arXiv](https://arxiv.org/abs/2207.09640) [OpenReview](https://openreview.net/forum?id=2yvUYc-YNUH)  
+Test-time Adaptation via Conjugate Pseudo-Labels. NeurIPS 2022.
 
-[Sachin Goyal*](https://saching007.github.io/), [Mingjie Sun*](https://eric-mingjie.github.io/), [Aditi Raghunanthan](https://www.cs.cmu.edu/~aditirag/), [J. Zico Kolter](http://zicokolter.com/) (* equal contribution)  
+[[arXiv]](https://arxiv.org/abs/2207.09640), [[OpenReview]](https://openreview.net/forum?id=2yvUYc-YNUH)
 
-NeurIPS 2022.
+[Sachin Goyal](https://saching007.github.io/)\*, [Mingjie Sun](https://eric-mingjie.github.io/)\*, [Aditi Raghunanthan](https://www.cs.cmu.edu/~aditirag/), [J. Zico Kolter](http://zicokolter.com/) (* equal contribution).
 
 
 We provide the source training code (PolyLoss) in `cifar_source_train.py` and `imagenet_source_train.py`. For ImageNet training, we follow the setup of [pytorch ImageNet training](https://github.com/pytorch/examples/tree/main/imagenet). Put the source model in the [saved_models/pretrained](saved_models/pretrained) directory. Here we provide our PolyLoss with eps 6 model on CIFAR-10 as an example.
