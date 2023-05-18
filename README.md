@@ -1,9 +1,7 @@
 # Test-time Adaptation via Conjugate Pseudo-Labels
 This repository provide the the implementation for replicating the results in the following paper:
 
-Test-time Adaptation via Conjugate Pseudo-Labels. NeurIPS 2022.
-
-[[arXiv]](https://arxiv.org/abs/2207.09640), [[OpenReview]](https://openreview.net/forum?id=2yvUYc-YNUH)
+Test-time Adaptation via Conjugate Pseudo-Labels. NeurIPS 2022. [[arXiv]](https://arxiv.org/abs/2207.09640), [[OpenReview]](https://openreview.net/forum?id=2yvUYc-YNUH)
 
 [Sachin Goyal](https://saching007.github.io/)\*, [Mingjie Sun](https://eric-mingjie.github.io/)\*, [Aditi Raghunanthan](https://www.cs.cmu.edu/~aditirag/), [J. Zico Kolter](http://zicokolter.com/) (* equal contribution).
 
