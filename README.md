@@ -1,11 +1,12 @@
 # Test-time Adaptation via Conjugate Pseudo-Labels
-This repository provide the the implementation for replicating the results in the following paper:
+This is a PyTorch implementation of **Conjugate Pseudo-Labels**, proposed in our NeurIPS 2022 paper:
 
-Test-time Adaptation via Conjugate Pseudo-Labels. NeurIPS 2022. [[arXiv]](https://arxiv.org/abs/2207.09640), [[OpenReview]](https://openreview.net/forum?id=2yvUYc-YNUH)
+>Test-time Adaptation via Conjugate Pseudo-Labels.     
+>Sachin Goyal*, Mingjie Sun*, Aditi Raghunanthan, J. Zico Kolter    
 
-[Sachin Goyal](https://saching007.github.io/)\*, [Mingjie Sun](https://eric-mingjie.github.io/)\*, [Aditi Raghunanthan](https://www.cs.cmu.edu/~aditirag/), [J. Zico Kolter](http://zicokolter.com/) (* equal contribution).
+For more details, please check out our [<ins>**paper**</ins>](https://arxiv.org/abs/2207.09640).
 
-
+---
 We provide the source training code (PolyLoss) in `cifar_source_train.py` and `imagenet_source_train.py`. For ImageNet training, we follow the setup of [pytorch ImageNet training](https://github.com/pytorch/examples/tree/main/imagenet). Put the source model in the [saved_models/pretrained](saved_models/pretrained) directory. Here we provide our PolyLoss with eps 6 model on CIFAR-10 as an example.
 
 For test-time adaptation, specify the path in `MODEL.CKPT_PATH` argument in the yaml config file, for polyloss model, an extra parameter `MODEL.EPS` should be added. To use our conjugate pseudo-label loss, specify the optimizer parameter  `OPTIM.ADAPT` as `conjugate` in the config file.
@@ -59,3 +60,17 @@ python svhn_mnist_tta_test.py --cfg cfgs/digit.yaml
 
 ## Credits  
 This code has been built upon the code accompanying the paper "Tent: Fully Test-time Adaptation by Entropy Minimization" at https://github.com/DequanWang/tent. We are grateful to authors for releasing their code.
+
+## License
+This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
+
+## Citation
+If you find this repository helpful, please consider citing:
+```
+@Article{goyal2022conjugate,
+  author  = {Goyal, Sachin and Sun, Mingjie and Raghunanthan, Aditi and Kolter, Zico},
+  title   = {Test-time adaptation via conjugate pseudo-labels},
+  journal = {Advances in Neural Information Processing Systems},
+  year    = {2022},
+}
+```
